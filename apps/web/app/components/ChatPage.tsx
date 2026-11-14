@@ -846,6 +846,19 @@ export default function ChatPage() {
           inputAreaHeight={inputAreaHeight}
           inputAreaMinHeight={INPUT_AREA_HEIGHT_MIN}
         />
+        <footer className="candleLegend" aria-label="Candlestick color legend">
+          <span className="candleLegendGroup">
+            <strong>Historical charts:</strong>
+            <span className="candleLegendKey"><span className="candleSwatch historicalUp" aria-hidden="true" /> Red = bullish</span>
+            <span className="candleLegendKey"><span className="candleSwatch historicalDown" aria-hidden="true" /> Green = bearish</span>
+          </span>
+          <span className="candleLegendGroup">
+            <strong>Pasted OHLC:</strong>
+            <span className="candleLegendKey"><span className="candleSwatch queryUp" aria-hidden="true" /> Cyan = bullish</span>
+            <span className="candleLegendKey"><span className="candleSwatch queryDown" aria-hidden="true" /> Red = bearish</span>
+          </span>
+          <span>Uploaded charts keep their colors.</span>
+        </footer>
       </main>
     </div>
   );
