@@ -794,6 +794,47 @@ body {
   cursor: not-allowed;
 }
 
+.candleLegend {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 18px;
+  padding: 8px 16px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-sidebar);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.candleLegendGroup {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 8px;
+}
+
+.candleLegendGroup strong { color: var(--text); }
+
+.candleLegendKey {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.candleSwatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  border: 1px solid rgb(0 0 0 / 24%);
+}
+
+.candleSwatch.historicalUp { background: red; }
+.candleSwatch.historicalDown { background: green; }
+.candleSwatch.queryUp { background: #22d1ee; }
+.candleSwatch.queryDown { background: #ff5b6e; }
+
 /* ========== 响应式 ========== */
 @media (max-width: 768px) {
   .chatLayout {

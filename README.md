@@ -40,6 +40,14 @@ Traditional financial analysis relies on a fixed taxonomy of candlestick pattern
 
 ---
 
+## Candlestick colors
+
+The matched historical chart and its two follow-up windows in the local demo use the Chinese candlestick convention: **red** means the close was above the open (bullish), and **green** means the close was below the open (bearish).
+
+Uploaded query charts keep their original colors. Query charts drawn from pasted OHLC data use **cyan** for up candles and **red** for down candles.
+
+---
+
 ## 🚀 Getting Started
 
 ### Requirements
